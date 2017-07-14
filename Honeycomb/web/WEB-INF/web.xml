@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>addpost</servlet-name>
+        <servlet-class>addpost</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addprofilepic</servlet-name>
+        <servlet-class>addprofilepic</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>adduserphoto</servlet-name>
+        <servlet-class>adduserphoto</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addpost</servlet-name>
+        <url-pattern>/addpost</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addprofilepic</servlet-name>
+        <url-pattern>/addprofilepic</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adduserphoto</servlet-name>
+        <url-pattern>/adduserphoto</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

@@ -1,0 +1,325 @@
+/* Font */
+@font-face {
+	font-family: 'Exo-Regular';
+	src: url('fonts/Exo/Exo-Regular.ttf');
+	src: url('fonts/Exo/Exo-Regular.ttf') format('ttf'),
+		 url('fonts/Exo/Exo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'YanoneKaffeesatz-Regular';
+	src: url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf');
+	src: url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf') format('ttf'),
+		 url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'YanoneKaffeesatz-Light';
+	src: url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Light.ttf');
+	src: url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Light.ttf') format('ttf'),
+		 url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Light.ttf') format('truetype');
+}
+
+html { 
+  background: url(honeycomb.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+#main{
+	width: 100%;
+
+}
+
+#inheader{
+	height: 150px;
+	background: none;
+}
+
+#inmain{
+	height: 410px;
+	background-color: rgba(255,69,0,0.2);
+}
+
+#inmain table tr td{
+	padding: none;
+	margin: none;
+}
+
+.desc{
+	font-size: 30px;
+	color: white;
+	padding: none;
+	font-weight: bold;
+	font-family: 'YanoneKaffeesatz-Light';
+	height: 60px;
+}
+
+input[type="submit"]{
+    background-color: #FF8C00;
+    margin: 5px;    
+    color: black;
+    border: 2px solid white;
+    padding: 15px 30px;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 40px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    margin: 5px;
+    border: 2px solid #FF8C00;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+#header{
+	height: 100px;
+	width: 720;
+	margin: none;
+}
+
+#header.img{
+	padding-left: 10px;
+}
+
+#header ul{
+	padding-top: 20px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+
+#header ul a{
+	font-family: arial, sans-serif;
+	text-decoration: none;
+	color: orange;
+	font-weight: bold;
+	padding: 12px;
+	height: auto;
+	border-radius: 10px;
+}
+
+#header ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 150px;
+	color: white;
+	font-size: 20px;
+	float: right;
+	border-radius: 10px;
+}
+
+#header ul li :hover{
+	background: orange;
+	transition: all 0.30s;
+	border-radius: 10px;
+	color: white;
+}
+
+#logo{
+	width: 200px;
+	float: left;
+	cursor: pointer;
+	padding: 5px 0px 10px 55px;
+}
+
+#con{
+	height: auto;
+	width: auto;
+	margin: none;
+}
+
+#footer{
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	height: 100px;
+	width: auto;
+	margin: none;
+	background-color: rgba(255,255,255,0.5);
+}
+
+#header1{
+	height: 75px;
+	width: 720;
+	margin: none;
+}
+
+#reghead{
+	height: 100px;
+	width: auto;
+}
+
+input[type="text"]{
+    background-color: #FF8C00;
+    color: white;
+    margin-top: none;
+    margin-bottom: none;
+    border: 2px solid white;
+    padding: 9px 26px;
+    width: 85px;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type="text"]:focus{
+    background-color: black;
+    color: white;
+    margin-top: none;
+    margin-bottom: none;
+    border: 2px solid #FF8C00;
+    padding: 9px 26px;
+    width: 85px;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    background-color: #FF8C00;
+    margin: none;
+    color: white;
+    border: 2px solid white;
+    padding: 9px 30px;
+    width: 420px;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    background-color: black;
+    margin: none;
+    color: white;
+    outline: none;
+    border: 2px solid #FF8C00;
+    padding: 9px 30px;
+    width: 420px;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 20px;
+    transition: all 0.40s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+
+.regtab{
+	border: 1px solid white;
+	background-color: rgba(255,69,0,0.1);
+}
+
+.regbtn{
+    background-color: black;
+    margin: 5px;    
+    color: black;
+    border: 2px solid white;
+    padding: 15px 30px;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 40px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.regbtn:hover{
+    background-color: gold;
+    margin: 5px;
+    border: 2px solid #FF8C00;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+select[name="day"], select[name="month"], select[name="year"], select[name="gender"] {
+    background-color: #FF8C00;
+    color: black;
+    border: 2px solid white;
+    padding: 9px 30px;
+    width: 158px;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.regform{
+	height: 400px;
+}
+
+.logform{
+	height: 150px;
+}
+
+#header2{
+	height: 175px;
+	width: 720;
+	margin: none;
+}
+
+.loginfo{
+    font-family: 'YanoneKaffeesatz-Regular';
+    font-size: 32px;
+    color: white;
+}
+
+.loginfo a{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+}
+
+.loginfo a:hover{
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+}

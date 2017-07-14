@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Get Started</title>
+        <script type="text/javascript">
+            function getParameterByName(name, url) {
+                if (!url) {
+                    url = window.location.href;
+                }
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+            var msg=getParameterByName('msg');
+            var m=msg.toString();
+            window.onload = function(){ alert(m);}
+        </script>
+</head>
+<body>
+<div id="main">
+	<div id="header2">
+		
+		
+	</div>	
+	<div id="con">
+            <form method="post" action="login.jsp" name="logform">
+		<table class="regtab" width="600">
+			<tr>
+				<td align="center">
+					<img src="logo_phixr.png" id="reghead">		
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="logform">
+						<tr>
+							<td align="center">
+                                                            <input type="text" name="username" placeholder="Username">
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+                                                            <input type="password" name="password" placeholder="Password">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="button" colspan="3">
+                                    <input type="submit" value="Login" class="regbtn" onclick="return confirm('Are you sure you want to Sign In?');">
+				</td>
+			</tr>
+                        <tr>
+                            <td align="center" colspan="3" class="loginfo">
+                                Need an Account? <a href="register.html">Sign Up!</a>
+				</td>
+			</tr>
+		</table>
+            </form>    
+	</div>
+	
+</div>
+</body>
+</html>
